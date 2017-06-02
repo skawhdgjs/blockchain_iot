@@ -4,8 +4,7 @@
   "description": "blockchain",
   "main": "app.js",
   "dependencies": {
-    "crypto-js": "^3.1.9-1",
-    "express": "^4.15.3"
+    "bitcore-lib": "^0.14.0",
   },
   "devDependencies": {},
   "scripts": {
