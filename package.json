@@ -1,12 +1,8 @@
 {
   "name": "blockchain",
   "version": "1.0.0",
-  "description": "blockchain",
+  "description": "blockchain_iot",
   "main": "app.js",
-  "dependencies": {
-    "bitcore-lib": "^0.14.0",
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
