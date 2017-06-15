@@ -7,5 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aes256": "^1.0.2",
+    "asymmetric-crypto": "^1.0.1",
+    "asymmetrical-signing": "^2.0.1",
+    "bitcoin-net": "^4.5.0",
+    "crypto-js": "^3.1.9-1",
+    "crypto-random-string": "^1.0.0",
+    "dns": "^0.2.2",
+    "express": "^4.15.3",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.4",
+    "node-rsa": "^0.4.2",
+    "p2p": "^0.10.2",
+    "pbkdf2-simple-crypt": "^1.0.1",
+    "webcoin-bitcoin": "^3.1.4"
+  }
 }
