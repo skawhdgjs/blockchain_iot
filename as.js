@@ -1,12 +1,6 @@
-var pk = [{
-  pk : '1'
-},
-{
-  pk : '2'
-}
-]
+var tr = require('./lib/transaction')
 
+//var a = tr.create(1,1,1,1,1);
 
-pk.sharedkey = 2;
-
-console.log(pk[0]);
+tr.read();
+//console.log(a);

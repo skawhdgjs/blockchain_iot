@@ -19,6 +19,7 @@
     "express": "^4.15.3",
     "ip": "^1.1.5",
     "lodash": "^4.17.4",
+    "mongoose": "^4.10.8",
     "node-rsa": "^0.4.2",
     "p2p": "^0.10.2",
     "pbkdf2-simple-crypt": "^1.0.1",
