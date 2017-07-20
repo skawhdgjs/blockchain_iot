@@ -1,7 +1,18 @@
-var _ = require('lodash');
+var aes256 = require('aes256');
+var crypto = require('asymmetric-crypto')
+var trans = require('./lib/transaction')
+var rdString = require('crypto-random-string');
 
-var a = { a1 : 3}
+const keyPair = crypto.keyPair();
 
-_.assignIn(a,  { a2:2} );
+var tr = new trans(1, 1, 3, 'thermometer : '+ ( (Math.random()*4)+26 ) +'°C',
+        keyPair.publicKey);
+console.log(tr);
+console.log(JSON.stringify( tr ));
 
-console.log(a);
+const shardKey = rdString(64);
+
+var encrypted = aes256.encrypt(shardKey, JSON.stringify(tr));
+console.log(encrypted);
+var decrypted = aes256.decrypt(shardKey, encrypted);
+console.log(decrypted);
