@@ -1,14 +1,25 @@
  var Transaction = require('./lib/BI_Tx')
+ var CD = require('./lib/BI_symmetricCD');
+ var CDI;
 
  var rawTx = {
-   id : '1',
-   devId : '0101',
-   txType : '3',
-   //timestamp : new Date().toString,
-   content : 'open',
-   //sig : '5bd428537f05f9830e93792f90ea6a3e2d1ee84952dd96edbae9f658f831ab13'
+    devId : 1,
+    txType : 1,
+    opType : 0,
+    content : 'abc'
  };
 
  var tx = new Transaction(rawTx);
+ var CDI = new CD('hi');
 
- console.log(tx)
+ console.log(CDI.cipher(tx.ser()));
+
+var a = CDI.cipher(tx.ser());
+
+ console.log(CDI.decipher(a));
+
+var b= CDI.decipher(a);
+
+console.log(tx.parse(b));
+
+ //console.log(CDI.decipher(CDI.cipher(tx.ser())));
