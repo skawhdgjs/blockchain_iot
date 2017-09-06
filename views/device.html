@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <% for(var i=0; i < oplist.length; i++) { %>
+      <li>
+              registered transactiontx <%= i %> -- Type : <%= oplist[i].txType %> trgORop : <%= oplist[i].trgORop %> content :<%=oplist[i].content %>
+      </li>
+  <% } %>
+  </body>
+</html>
